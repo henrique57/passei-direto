@@ -1,0 +1,53 @@
+@import '../../assets/colors.scss';
+
+#menu_item {
+  display: flex;
+  // width: 120px;
+  height: 100%;
+  margin-right: 60px;
+
+  #link {
+    display: flex;
+    justify-content: center;
+    color: $medium_gray;
+    text-decoration: none;
+    transition-duration: 0.35s;
+
+    &:hover {
+      color: $white;
+      border-bottom: 1px solid $medium_gray;
+      // margin-bottom: 3px;
+    }
+
+    &:not(:hover) {
+      transition-duration: 0.75s;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  #menu_item {
+    position: flex;
+    justify-content: flex-start;
+    text-decoration: none;
+    width: 100%;
+
+    #link {
+      display: flex;
+      width: 100%;
+      padding: 0;
+      text-decoration: none;
+      color: $white;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      // transition-duration: 0.35s;
+
+      &:hover {
+        color: $white;
+        border-bottom: 0px solid $medium_gray;
+        // margin: 0px;
+      }
+    }
+
+  }
+}

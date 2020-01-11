@@ -1,0 +1,64 @@
+@import '../../assets/colors.scss';
+
+#form_item {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  margin: 10px;
+  padding: 2px;
+
+  #form_item_label {
+    display: flex;
+    justify-content: flex-start;
+    align-content: center;
+    margin-top: 4px;
+    color: $black;
+    margin-bottom: 4px;
+  }
+
+  ::placeholder {
+    /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: $light_blue;
+    opacity: 1;
+    /* Firefox */
+  }
+
+  :-ms-input-placeholder {
+    /* Internet Explorer 10-11 */
+    color: $light_blue;
+  }
+
+  ::-ms-input-placeholder {
+    /* Microsoft Edge */
+    color: $light_blue;
+  }
+
+  .form_item_input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: $black;
+    background-color: $white;
+    // border-bottom: 10px solid $white;
+    border: none;
+
+
+    &:focus {
+      color: $black;
+      transition-duration: 0.25s;
+    }
+
+    &:not(:focus) {
+      transition-duration: 0.55s;
+    }
+  }
+}
+
+@media (orientation: portrait) {
+  #form_item {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+  }
+}

@@ -1,0 +1,28 @@
+@import '../../assets/colors.scss';
+@import '../../assets/button.scss';
+
+#image_selector {
+  display: flex;
+  background-color: $lighter_gray;
+  padding: 2px;
+  min-height: 25px;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 6px;
+  padding-top: 6px;
+  padding-bottom: 6px;
+  padding-left: 10px;
+  padding-right: 6px;
+
+  #placeholder {
+    display: flex;
+    flex: 1 1;
+    font-size: 12px;
+    justify-content: center;
+    align-content: center;
+  }
+
+  #button {
+    height: auto;
+  }
+}

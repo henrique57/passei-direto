@@ -1,0 +1,7 @@
+@import '../../assets/colors.scss';
+@import '../../assets/container.scss';
+
+#container_form {
+  @extend #container;
+  // width: 50%;
+}

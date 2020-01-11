@@ -1,0 +1,26 @@
+@import '../../assets/colors.scss';
+
+#search_bar {
+  display: flex;
+
+
+  #search_input {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    color: $medium_gray;
+    background-color: $lighter_gray;
+    border: none;
+    margin-right: 5px;
+
+    &:focus {
+      color: $black;
+      transition-duration: 0.25s;
+    }
+
+    &:not(:focus) {
+      transition-duration: 0.55s;
+    }
+  }
+}

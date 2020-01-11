@@ -1,0 +1,22 @@
+@import '../../assets/colors.scss';
+
+#modal_list {
+  position: absolute;
+
+  height: auto;
+  width: auto;
+}
+
+
+@media (orientation: landscape) {
+  #modal_list {
+    top: 75px;
+    right: 20px;
+  }
+}
+
+@media (orientation: portrait) {
+  #modal_list {
+    top: 10px;
+  }
+}

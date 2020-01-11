@@ -1,0 +1,89 @@
+@import '../../assets/colors.scss';
+
+#disco_form {
+  display: flex;
+  background-color: $white;
+  justify-content: center;
+  align-content: center;
+  border-radius: 6px;
+  width: 100%;
+
+  #main_panel {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+
+    #left_panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      align-content: center;
+      width: 100%;
+
+      img {
+        display: flex;
+        justify-content: center;
+        align-self: center;
+        width: 60%;
+        height: auto;
+        border: 0.5px dotted $lighter_gray;
+        margin-bottom: 6px;
+      }
+    }
+
+    #right_panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-evenly;
+      width: 100%;
+      background-color: $lighter_gray;
+      border-radius: 6px;
+
+      Button {
+        margin: 6px;
+      }
+    }
+  }
+}
+
+@media only screen and (orientation: landscape) {
+  #disco_form {
+    display: flex;
+    flex-direction: column;
+    height: 50%;
+    width: 100%;
+
+    #left_panel {
+      margin-right: 20px;
+    }
+  }
+}
+
+@media only screen and (orientation: portrait) {
+  #disco_form {
+    display: flex;
+    flex-direction: column;
+
+    #main_panel {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
+
+      #left_panel {
+        width: 90%;
+      }
+
+      #right_panel {
+        width: 90%;
+      }
+    }
+
+  }
+
+  #left_panel {
+    margin-bottom: 20px;
+  }
+}

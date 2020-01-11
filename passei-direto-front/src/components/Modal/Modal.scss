@@ -1,0 +1,72 @@
+@import '../../assets/colors.scss';
+
+@mixin default_transition {
+  &:hover {
+    background-color: rgba($black, 0.2);
+    transition-duration: 250ms;
+  }
+
+  &:not(:hover) {
+    transition-duration: 750ms;
+  }
+}
+
+@mixin inside_default {
+  display: flex;
+
+  #modal_container {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    box-shadow: 0 6px 10px 1px $darker_gray;
+
+    #close_button {
+      display: flex;
+      justify-content: flex-start;
+      margin: 4px;
+      color: rgba($black, 0.5);
+    }
+
+    #content {
+      display: flex;
+      height: auto;
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+      margin-bottom: 8px;
+
+    }
+
+    @include default_transition;
+  }
+}
+
+#modal {
+  width: 350px;
+  height: auto;
+  margin-bottom: 10px;
+  border-radius: 4px;
+
+  @include inside_default;
+
+  &-green {
+    @extend #modal;
+    opacity: 1;
+    background-color: $green;
+  }
+
+  &-red {
+    @extend #modal;
+    opacity: 1;
+    background-color: $red;
+  }
+
+  &-yellow {
+    @extend #modal;
+    opacity: 1;
+    background-color: $yellow;
+  }
+}

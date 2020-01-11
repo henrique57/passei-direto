@@ -1,0 +1,79 @@
+@import '../../assets/colors.scss';
+
+$font_size: 15px;
+$font_size_page_aux: 15px;
+
+@mixin default_transition {
+  &:hover {
+    background-color: $light_gray;
+    color: $black;
+    transition-duration: 0.3s;
+  }
+
+  &:not(:hover) {
+    transition-duration: 0.6s;
+  }
+}
+
+#paginator {
+  display: flex;
+  flex-direction: row;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+  #current_page_number {
+    $margin_vertical: 3px;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    background-color: $medium_gray;
+    color: $white;
+    font-size: $font_size;
+    margin-left: $margin_vertical;
+    margin-right: $margin_vertical;
+    transition-duration: 0.3s;
+    padding: 5px;
+  }
+
+  #page_number {
+    $margin_vertical: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    background-color: $white;
+    color: $dark_gray;
+    font-size: $font_size;
+    margin-left: $margin_vertical;
+    margin-right: $margin_vertical;
+    border-radius: 4px;
+    padding: 7px;
+
+
+    @include default_transition;
+  }
+
+  #page_aux {
+    $margin_vertical: 1px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-self: center;
+    text-align: center;
+    background-color: $white;
+    color: $black;
+    border-radius: 4px;
+    font-size: $font_size_page_aux;
+    margin-left: $margin_vertical;
+    margin-right: $margin_vertical;
+    padding: 7px;
+
+
+    @include default_transition;
+  }
+}

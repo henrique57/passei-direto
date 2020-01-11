@@ -1,0 +1,68 @@
+@import './colors.scss';
+
+#button {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  background-color: $darker_gray;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: inset 0 0 3px $black;
+  color: $white;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+
+  &:hover {
+    background-color: $black;
+    transition-duration: 0.4s;
+  }
+}
+
+#button_red {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: inset 0 0 3px $black;
+  color: $white;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  background-color: $red;
+
+  &:hover {
+    background-color: $dark_red;
+    transition-duration: 0.25s;
+  }
+}
+
+#button_green {
+  display: flex;
+  justify-content: center;
+  user-select: none;
+  border: none;
+  padding: 10px;
+  font-size: 12px;
+  box-shadow: inset 0 0 3px $black;
+  color: $white;
+  -moz-user-select: none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -o-user-select: none;
+  background-color: $green;
+
+  &:hover {
+    background-color: $medium_green;
+    transition-duration: 0.25s;
+  }
+}
+
+#button_input {
+  display: none;
+}

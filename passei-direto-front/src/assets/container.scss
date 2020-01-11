@@ -1,0 +1,21 @@
+#container {
+  display: flex;
+  justify-content: center;
+  // align-self: center;
+
+  height: 100%;
+}
+
+@media (orientation: portrait) {
+  #container {
+    display: flex;
+    height: 100%;
+  }
+}
+
+@media (orientation: landscape) {
+  #container {
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
